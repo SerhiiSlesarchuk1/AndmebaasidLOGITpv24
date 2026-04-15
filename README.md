@@ -29,3 +29,9 @@ admebaaside haldusega seotud sql kood ja konspektid
      4. boolean, bit, bool - loogilised
      ```
      
+## Tabelivahelised seosed
+- üks-ühele (nt naine-mees)
+- üks-mitmele (nt naine -lapsed) <img width="804" height="468" alt="{0DE07821-8815-4A34-956F-5B67DA6A696B}" src="https://github.com/user-attachments/assets/3c032f19-5fcd-4b3e-9b90-0d52a4c01880" />
+
+- mitme-mitmele (õpilased-tunnid)
+- 
