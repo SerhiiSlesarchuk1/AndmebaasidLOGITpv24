@@ -34,4 +34,5 @@ admebaaside haldusega seotud sql kood ja konspektid
 - üks-mitmele (nt naine -lapsed) <img width="804" height="468" alt="{0DE07821-8815-4A34-956F-5B67DA6A696B}" src="https://github.com/user-attachments/assets/3c032f19-5fcd-4b3e-9b90-0d52a4c01880" />
 
 - mitme-mitmele (õpilased-tunnid)
-- 
+- <img width="1017" height="659" alt="{C9AC0175-1F12-4680-B658-29736758917D}" src="https://github.com/user-attachments/assets/c0d6a859-bcf4-4ce5-b241-f93481fce6c3" />
+
