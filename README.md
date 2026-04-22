@@ -36,3 +36,16 @@ admebaaside haldusega seotud sql kood ja konspektid
 - mitme-mitmele (õpilased-tunnid)
 - <img width="1017" height="659" alt="{C9AC0175-1F12-4680-B658-29736758917D}" src="https://github.com/user-attachments/assets/c0d6a859-bcf4-4ce5-b241-f93481fce6c3" />
 
+## ALTER TABLE
+ˇˇˇ sql
+--tabeli struktuuri muutmine
+--1. uue veeru lisamine
+ALTER TABLE tootaja ADD testVeerg int;
+Select * from tootaja;
+--2. veeru kustutamine
+ALTER TABLE tootaja DROP COLUMN testVeerg;
+--3. andmetüübi muutmine veerus
+ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
+--struktuuri kontrollimiseks kasutame protseduur sp_help
+sp_help tootaja; 
+ˇˇˇ
