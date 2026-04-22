@@ -37,7 +37,7 @@ admebaaside haldusega seotud sql kood ja konspektid
 - <img width="1017" height="659" alt="{C9AC0175-1F12-4680-B658-29736758917D}" src="https://github.com/user-attachments/assets/c0d6a859-bcf4-4ce5-b241-f93481fce6c3" />
 
 ## ALTER TABLE
-ˇˇˇ sql
+``` sql
 --tabeli struktuuri muutmine
 --1. uue veeru lisamine
 ALTER TABLE tootaja ADD testVeerg int;
@@ -48,4 +48,4 @@ ALTER TABLE tootaja DROP COLUMN testVeerg;
 ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
 --struktuuri kontrollimiseks kasutame protseduur sp_help
 sp_help tootaja; 
-ˇˇˇ
+```
