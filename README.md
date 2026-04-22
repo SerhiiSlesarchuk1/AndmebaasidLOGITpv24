@@ -49,3 +49,48 @@ ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
 --struktuuri kontrollimiseks kasutame protseduur sp_help
 sp_help tootaja; 
 ```
+
+```
+-- 1. ja 2. Tabelite loomine koos piirangutega
+CREATE TABLE Category(
+idCategory int PRIMARY KEY identity(1,1),
+Category_Name varchar(50) not null UNIQUE)
+
+CREATE TABLE Productt(
+idProduct int PRIMARY KEY identity(1,1),
+ProductName varchar(100) not null,
+idCategory int,
+Price decimal(10,2) CHECK (Price > 0),
+FOREIGN KEY (idCategory) REFERENCES Category(idCategory))
+
+CREATE TABLE Customer(
+idCustomer int PRIMARY KEY identity(1,1),
+Name varchar(100) not null,
+Contact varchar(100))
+
+CREATE TABLE Sale(
+idSale int PRIMARY KEY identity(1,1),
+idProductt int,
+idCustomer int,
+Count_pr int DEFAULT 1 CHECK (Count_pr > 0),
+Date_of_sale date,
+FOREIGN KEY (idProductt) REFERENCES Productt(idProductt),
+FOREIGN KEY (idCustomer) REFERENCES Customer(idCustomer))
+
+-- 3. Muuda mingi välja tüüpi
+ALTER TABLE Category ALTER COLUMN Category_Name varchar(100);
+
+-- 4. Lisa tabelisse Sale väli Units
+ALTER TABLE Sale ADD Units varchar(10);
+
+-- 5. Eemalda mingi piirang
+-- Eemaldame unikaalsuse piirangu Category tabelist
+ALTER TABLE Category DROP CONSTRAINT UQ__Category__3214EC06; 
+-- (Märkus: MS SQL määrab UNIQUE piirangule nime automaatselt, kui seda ise ei nimeta)
+
+-- Kontrollimiseks
+SELECT * FROM Category;
+SELECT * FROM Productt;
+SELECT * FROM Customer;
+SELECT * FROM Sale;
+```
