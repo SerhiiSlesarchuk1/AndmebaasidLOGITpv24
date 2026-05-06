@@ -35,6 +35,7 @@ kustutamiseks
 ## XAMPP
 lisa
 <img width="962" height="598" alt="{92EA4892-D3A0-4CF2-B5AC-22DDD2B39977}" src="https://github.com/user-attachments/assets/a2eaf588-955b-485a-8b9d-65ddd9ebab0c" />
+<img width="861" height="297" alt="{2B929CC0-B999-4190-B054-3D8E9A89B1EB}" src="https://github.com/user-attachments/assets/db590ec8-ca39-425d-93ea-0df38b2d4be6" />
 ```sql
 BEGIN
     INSERT INTO categories(category_name)
@@ -45,6 +46,7 @@ END;
 
 kustuta
 <img width="983" height="595" alt="{291FAEA3-565A-498D-8D3A-C2D0D7DCAF43}" src="https://github.com/user-attachments/assets/162e6865-3b1d-475c-83cd-8ac44a7dc917" />
+<img width="619" height="369" alt="{A4EF5C59-C583-4840-B33B-0359FE3A5B2A}" src="https://github.com/user-attachments/assets/59264309-a7c9-4f1f-9ad8-56060d16f73f" />
 ```sql
 BEGIN
     SELECT * FROM categories;
