@@ -62,3 +62,69 @@ VALUES ('Ülemiste', 'iphone', 'ülemiste@gmail.com', 'ülemiste tee', 'Tallinn'
 
 SELECT * FROM stores;
 ```
+<img width="601" height="80" alt="{0EED95FA-F3FB-4E41-B12A-225E6885D7C8}" src="https://github.com/user-attachments/assets/3c754e40-0576-4d0a-ba2c-27771f4f4c82" />
+
+```sql
+--5.stocks
+CREATE TABLE stocks(
+store_id int,
+product_id int,
+PRIMARY KEY (store_id, product_id),
+FOREIGN KEY (store_id) references stores(store_id),
+FOREIGN KEY (product_id) references products(product_id),
+
+quantity int 
+)
+
+INSERT INTO stocks
+VALUES (1, 1, 4)
+
+SELECT * FROM stocks;
+```
+<img width="221" height="94" alt="{EF631501-4081-4F48-8080-FADB53488B4D}" src="https://github.com/user-attachments/assets/c8674e9a-1d92-42fb-8670-503b4abe91d3" />
+
+```sql
+--6.customers
+create table customers(
+customer_id int primary key identity(1,1),
+first_name varchar(15) not null,
+last_name varchar(15) not null,
+phone varchar(13),
+email varchar(20),
+street varchar(15),
+city varchar(15) check (city='Tallinn' or city='Narva'),
+zip_code char(5)
+)
+
+insert into customers
+values('Andrei', 'Lomov', '52637294', 'andrei@gmail.com', 'Ülemiste tee', 'Tallinn','13912');
+
+select * from customers
+```
+<img width="661" height="95" alt="{499A69AA-4566-49E4-BC78-650B5C15213E}" src="https://github.com/user-attachments/assets/5d299752-ebd9-4b0f-b351-80f195a7af7b" />
+
+```sql
+--7.staff
+create table staff(
+staff_id int primary key identity(1,1),
+first_name varchar(15) not null,
+last_name varchar(15) not null,
+email varchar(20),
+phone varchar(13),
+active bit,
+store_id int,
+foreign key (store_id) references stores(store_id),
+manager bit
+);
+
+insert into staff
+values('Irina', 'Rahva', 'irina@gmail.com', '52635494', 1, 1, 1);
+
+select * from staff;
+```
+<img width="546" height="80" alt="{0ACAB392-F42B-4EAE-AB8C-986F228F0546}" src="https://github.com/user-attachments/assets/82686a96-b26c-4300-b4ec-0334e247414e" />
+
+```sql
+
+
+
