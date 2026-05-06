@@ -24,4 +24,4 @@ SELECT * FROM categories;
 END;
 ```
 <img width="274" height="277" alt="{BB1BC15A-BD76-447F-BCE9-1A4CD6A74969}" src="https://github.com/user-attachments/assets/d5bae16c-2f8f-4e6d-9535-70ccc4fe67f2" />
-<img width="289" height="134" alt="{7120EFA3-048E-4E8A-88D9-0C549FFFC6B2}" src="https://github.com/user-attachments/assets/4af34952-b111-4bab-9c00-7c44ae5e34d9" />
+<img width="317" height="134" alt="{90AEFBFB-4A4A-4CF3-B608-6827223E4CA9}" src="https://github.com/user-attachments/assets/c1a0c459-9077-4127-9b27-d9e7a651c8ac" />
