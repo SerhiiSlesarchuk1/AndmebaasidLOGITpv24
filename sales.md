@@ -125,6 +125,51 @@ select * from staff;
 <img width="546" height="80" alt="{0ACAB392-F42B-4EAE-AB8C-986F228F0546}" src="https://github.com/user-attachments/assets/82686a96-b26c-4300-b4ec-0334e247414e" />
 
 ```sql
+--8. orders
+create table orders(
+order_id int PRIMARY KEY identity (1,1),
+customer_id int,
+order_status varchar(15) check(order_status='complete' or order_status='incomplete'),
+order_date  Date,
+required_date Date,
+shipped_date Date,
+store_id int,
+staff_id int,
+foreign key (customer_id) references customers(customer_id),
+foreign key (store_id) references stores(store_id),
+foreign key (staff_id) references staff(staff_id)
+);
+
+insert into orders
+values (1, 'incomplete', '2026-04-25', '2026-06-1', '2026-05-29', 1, 3);
+
+select * from orders;
+```
+<img width="603" height="85" alt="{C04BADF8-E661-4A06-92E1-F86B538490C4}" src="https://github.com/user-attachments/assets/dc4ecde2-7b2a-47ec-b4fa-71201385eb33" />
+
+```sql
+--9.order_items
+create table order_items(
+order_id int,
+item_id int,
+primary key (order_id, item_id),
+product_id int,
+quantity int,
+list_price money,
+discount int,
+foreign key (order_id) references orders(order_id),
+foreign key (product_id) references products(product_id)
+);
+
+insert into order_items
+values (2, 2, 1, 150, 1230, 90);
+
+select * from order_items;
+```
+<img width="383" height="104" alt="{28A826F5-ABEE-485B-A454-66C42437CE79}" src="https://github.com/user-attachments/assets/d085bbd3-683e-4e6b-bc4c-80ee9b273587" />
+
+Database diagramm
+<img width="1005" height="725" alt="{52350954-643F-4904-BB5B-3C8B25F5050F}" src="https://github.com/user-attachments/assets/863e892e-aef7-40e3-b887-830ed2bb112f" />
 
 
 
