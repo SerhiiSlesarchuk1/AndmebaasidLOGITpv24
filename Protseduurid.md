@@ -78,6 +78,8 @@ END;
 
 muudatus
 <img width="798" height="779" alt="{BDEC852A-0B5A-4A48-83F8-037E99E29704}" src="https://github.com/user-attachments/assets/75e4a502-cce8-4a23-85b0-5e581eeb8b59" />
+<img width="604" height="287" alt="{B742A133-9D0E-46A3-A6AA-68B76236D19A}" src="https://github.com/user-attachments/assets/011405cc-45d9-4294-bf42-cc6952a2bae8" />
+<img width="898" height="151" alt="{92682671-B373-4AD3-AC68-F1D091F7BBE0}" src="https://github.com/user-attachments/assets/03717a17-bec6-4d08-ae93-462c4a170bf5" />
 ```sql
 BEGIN
     SET @sql = CASE 
@@ -91,6 +93,16 @@ BEGIN
     DEALLOCATE PREPARE stmt;
 END;
 ```
-Kõik Tabeli
-<img width="699" height="369" alt="{BEAADE5D-F0E1-4BD3-AB4E-62DD1F365F1A}" src="https://github.com/user-attachments/assets/dab851a4-2efe-4f11-8e2a-2449327fb3ce" />
 
+hinnaKategooria
+<img width="801" height="513" alt="{A7FEC377-6F5C-4A8F-8105-838B0150F3F0}" src="https://github.com/user-attachments/assets/83609087-ef85-4ed6-b246-938784b0b487" />
+```sql
+BEGIN
+    SELECT toodeNimi, list_ürice,
+    IF(list_ürice<2, 'soodne', 'kallis') as hinnaKategoori
+    FROM products;
+END;
+```
+
+Kõik Tabeli
+<img width="755" height="389" alt="{43C5E658-6B64-4399-B28E-152B37B75C97}" src="https://github.com/user-attachments/assets/1fdf38c5-3c78-4bc4-9248-efc178eecd6c" />
