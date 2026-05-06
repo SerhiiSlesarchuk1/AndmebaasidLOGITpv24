@@ -31,3 +31,11 @@ END;
 
 kustutamiseks 
 <img width="518" height="273" alt="{A32A71D8-6634-49F5-A1EA-A5D8F1DB8F38}" src="https://github.com/user-attachments/assets/73590784-1361-4855-a989-9ef397446d12" />
+
+XAMPP
+lisa
+<img width="962" height="598" alt="{92EA4892-D3A0-4CF2-B5AC-22DDD2B39977}" src="https://github.com/user-attachments/assets/a2eaf588-955b-485a-8b9d-65ddd9ebab0c" />
+
+kustuta
+<img width="983" height="595" alt="{291FAEA3-565A-498D-8D3A-C2D0D7DCAF43}" src="https://github.com/user-attachments/assets/162e6865-3b1d-475c-83cd-8ac44a7dc917" />
+
