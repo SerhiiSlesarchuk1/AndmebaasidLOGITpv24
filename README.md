@@ -3,23 +3,12 @@ admebaaside haldusega seotud sql kood ja konspektid
 
 ## 📂 Projekti sisujuht
 
-<p align="left">
-  <a href="Code.sql"><img src="https://img.shields.io/badge/SQL_Kood-Code.sql-007bff?style=for-the-badge&logo=mysql&logoColor=white" /></a>
-  <a href="Code2.0.sql"><img src="https://img.shields.io/badge/SQL_Kood_2.0-Code2.0.sql-007bff?style=for-the-badge&logo=mysql&logoColor=white" /></a>
-  <a href="CREATE_IMSERT.md"><img src="https://img.shields.io/badge/Juhend-CREATE_INSERT-fd7e14?style=for-the-badge" /></a>
-</p>
-
-<p align="left">
-  <a href="Kasutaja.md"><img src="https://img.shields.io/badge/Kasutajad-Kasutaja.md-28a745?style=for-the-badge&logo=security&logoColor=white" /></a>
-  <a href="Protseduurid.md"><img src="https://img.shields.io/badge/Protseduurid-Protseduurid.md-6f42c1?style=for-the-badge" /></a>
-  <a href="sales.md"><img src="https://img.shields.io/badge/Müük-sales.md-e83e8c?style=for-the-badge" /></a>
-</p>
-
-<p align="left">
-  <a href="Triger.md"><img src="https://img.shields.io/badge/Päästikud-MariaDB-dc3545?style=for-the-badge&logo=mariadb&logoColor=white" /></a>
-  <a href="TrigerXAMPP.md"><img src="https://img.shields.io/badge/Päästikud-XAMPP-dc3545?style=for-the-badge&logo=xampp&logoColor=white" /></a>
-  <a href="Stored.md"><img src="https://img.shields.io/badge/Salvestatud-Stored.md-6c757d?style=for-the-badge" /></a>
-</p>
+| 🔨 Andmebaas & SQL | 🔐 Õigused & Haldus | ⚙️ Päästikud & Logi |
+| :--- | :--- | :--- |
+| [<img src="https://img.shields.io/badge/SQL_Kood-Code.sql-007bff?style=flat-square" width="160"/>](Code.sql) | [<img src="https://img.shields.io/badge/Kasutajad-Kasutaja.md-28a745?style=flat-square" width="160"/>](Kasutaja.md) | [<img src="https://img.shields.io/badge/Päästikud_MariaDB-Triger.md-dc3545?style=flat-square" width="160"/>](Triger.md) |
+| [<img src="https://img.shields.io/badge/SQL_Kood_2.0-Code2.0.sql-007bff?style=flat-square" width="160"/>](Code2.0.sql) | [<img src="https://img.shields.io/badge/Müügihaldus-sales.md-20c997?style=flat-square" width="160"/>](sales.md) | [<img src="https://img.shields.io/badge/Päästikud_XAMPP-TrigerXAMPP.md-dc3545?style=flat-square" width="160"/>](TrigerXAMPP.md) |
+| [<img src="https://img.shields.io/badge/Juhend-CREATE_INSERT-fd7e14?style=flat-square" width="160"/>](CREATE_IMSERT.md) | | [<img src="https://img.shields.io/badge/Protseduurid-Protseduurid.md-6f42c1?style=flat-square" width="160"/>](Protseduurid.md) |
+| | | [<img src="https://img.shields.io/badge/Salvestatud-Stored.md-6c757d?style=flat-square" width="160"/>](Stored.md) |
 
 ---
 
