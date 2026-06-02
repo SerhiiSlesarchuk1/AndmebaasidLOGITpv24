@@ -1,5 +1,7 @@
 ## AndmebaasidLOGITpv24
 admebaaside haldusega seotud sql kood ja konspektid
+### 📂 Navigeerimine:
+[🏠 Pealeht](README.md) | [🔹 Code SQL](Code.sql) | [🔹 Code 2.0](Code2.0.sql) | [🔸 CREATE INSERT](CREATE_IMSERT.md) | [🟩 Kasutajad](Kasutaja.md) | [🟪 Protseduurid](Protseduurid.md) | [🟪 Müük](sales.md) | [🟥 Päästikud (MySQL)](Triger.md) | [🟥 Päästikud (XAMPP)](TrigerXAMMP.md) | [⬛ Salvestatud](Stored.md)
 
 ## 📂 Projekti sisujuht
 
