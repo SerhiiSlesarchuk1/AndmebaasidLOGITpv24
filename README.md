@@ -2,53 +2,25 @@
 admebaaside haldusega seotud sql kood ja konspektid
 
 ## 📂 Projekti sisujuht
-<div class="projekti-navigatsioon">
-  <a href="Code.sql" class="nav-nupp sql-nupp">SQL Kood</a>
-  <a href="Code2.0.sql" class="nav-nupp sql-nupp">SQL Kood 2.0</a>
-  <a href="CREATE_IMSERT.md" class="nav-nupp doc-nupp">CREATE INSERT Juhend</a>
-  <a href="Kasutaja.md" class="nav-nupp user-nupp">Kasutajad</a>
-  <a href="Protseduurid.md" class="nav-nupp proc-nupp">Protseduurid</a>
-  <a href="sales.md" class="nav-nupp sales-nupp">Müügihaldus</a>
-  <a href="Triger.md" class="nav-nupp triger-nupp">Päästikud (MariaDB)</a>
-  <a href="TrigerXAMPP.md" class="nav-nupp triger-nupp">Päästikud (XAMPP)</a>
-  <a href="Stored.md" class="nav-nupp doc-nupp">Salvestatud</a>
-</div>
 
-<style>
-  .projekti-navigatsioon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-  }
+<p align="left">
+  <a href="Code.sql"><img src="https://img.shields.io/badge/SQL_Kood-Code.sql-007bff?style=for-the-badge&logo=mysql&logoColor=white" /></a>
+  <a href="Code2.0.sql"><img src="https://img.shields.io/badge/SQL_Kood_2.0-Code2.0.sql-007bff?style=for-the-badge&logo=mysql&logoColor=white" /></a>
+  <a href="CREATE_IMSERT.md"><img src="https://img.shields.io/badge/Juhend-CREATE_INSERT-fd7e14?style=for-the-badge" /></a>
+</p>
 
-  .nav-nupp {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white !important;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.2s ease-in-out;
-  }
+<p align="left">
+  <a href="Kasutaja.md"><img src="https://img.shields.io/badge/Kasutajad-Kasutaja.md-28a745?style=for-the-badge&logo=security&logoColor=white" /></a>
+  <a href="Protseduurid.md"><img src="https://img.shields.io/badge/Protseduurid-Protseduurid.md-6f42c1?style=for-the-badge" /></a>
+  <a href="sales.md"><img src="https://img.shields.io/badge/Müük-sales.md-e83e8c?style=for-the-badge" /></a>
+</p>
 
-  .nav-nupp:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    opacity: 0.9;
-  }
+<p align="left">
+  <a href="Triger.md"><img src="https://img.shields.io/badge/Päästikud-MariaDB-dc3545?style=for-the-badge&logo=mariadb&logoColor=white" /></a>
+  <a href="TrigerXAMPP.md"><img src="https://img.shields.io/badge/Päästikud-XAMPP-dc3545?style=for-the-badge&logo=xampp&logoColor=white" /></a>
+  <a href="Stored.md"><img src="https://img.shields.io/badge/Salvestatud-Stored.md-6c757d?style=for-the-badge" /></a>
+</p>
 
-  /* Цвета кнопок по категориям */
-  .sql-nupp { background-color: #007bff; }    /* Синий */
-  .doc-nupp { background-color: #fd7e14; }    /* Оранжевый */
-  .user-nupp { background-color: #28a745; }   /* Зеленый */
-  .proc-nupp { background-color: #6f42c1; }   /* Фиолетовый */
-  .sales-nupp { background-color: #e83e8c; }  /* Розовый */
-  .triger-nupp { background-color: #dc3545; } /* Красный */
-</style>
 ---
 
 ## Põhimõisted
