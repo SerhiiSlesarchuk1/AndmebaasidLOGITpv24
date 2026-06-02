@@ -1,18 +1,9 @@
 ## AndmebaasidLOGITpv24
 admebaaside haldusega seotud sql kood ja konspektid
-навигация
-[<img src="https://img.shields.io/badge/🏠_Pealeht-README-gray?style=flat" />](README.md) [<img src="https://img.shields.io/badge/🔹_SQL_Kood-Code.sql-blue?style=flat" />](Code.sql) [<img src="https://img.shields.io/badge/🔹_SQL_Kood_2.0-Code2.0.sql-blue?style=flat" />](Code2.0.sql) [<img src="https://img.shields.io/badge/🔸_Juhend-CREATE_INSERT-orange?style=flat" />](CREATE_IMSERT.md) [<img src="https://img.shields.io/badge/🟩_Kasutajad-Kasutaja.md-green?style=flat" />](Kasutaja.md) [<img src="https://img.shields.io/badge/🟪_Müük-sales.md-teal?style=flat" />](sales.md) [<img src="https://img.shields.io/badge/🟥_Päästikud_(MariaDB)-Triger.md-red?style=flat" />](Triger.md) [<img src="https://img.shields.io/badge/🟥_Päästikud_(XAMPP)-TrigerXAMPP.md-red?style=flat" />](TrigerXAMPP.md) [<img src="https://img.shields.io/badge/🟪_Protseduurid-Protseduurid.md-purple?style=flat" />](Protseduurid.md) [<img src="https://img.shields.io/badge/⬛_Salvestatud-Stored.md-black?style=flat" />](Stored.md)
 
----
 ## 📂 Projekti sisujuht
 
-| 🔨 Andmebaas & SQL | 🔐 Õigused & Haldus | ⚙️ Päästikud & Logi |
-| :--- | :--- | :--- |
-| [<img src="https://img.shields.io/badge/SQL_Kood-Code.sql-007bff?style=flat-square" width="160"/>](Code.sql) | [<img src="https://img.shields.io/badge/Kasutajad-Kasutaja.md-28a745?style=flat-square" width="160"/>](Kasutaja.md) | [<img src="https://img.shields.io/badge/Päästikud_MySQL-Triger.md-dc3545?style=flat-square" width="160"/>](Triger.md) |
-| [<img src="https://img.shields.io/badge/SQL_Kood_2.0-Code2.0.sql-007bff?style=flat-square" width="160"/>](Code2.0.sql) | [<img src="https://img.shields.io/badge/Müügihaldus-sales.md-20c997?style=flat-square" width="160"/>](sales.md) | [<img src="https://img.shields.io/badge/Päästikud_XAMPP-TrigerXAMPP.md-dc3545?style=flat-square" width="160"/>](TrigerXAMMP.md) |
-| [<img src="https://img.shields.io/badge/Juhend-CREATE_INSERT-fd7e14?style=flat-square" width="160"/>](CREATE_IMSERT.md) | | [<img src="https://img.shields.io/badge/Protseduurid-Protseduurid.md-6f42c1?style=flat-square" width="160"/>](Protseduurid.md) |
-| | | [<img src="https://img.shields.io/badge/Salvestatud-Stored.md-6c757d?style=flat-square" width="160"/>](Stored.md) |
-
+[<img src="https://img.shields.io/badge/🏠_Pealeht-README-gray?style=flat" />](README.md) [<img src="https://img.shields.io/badge/🔹_SQL_Kood-Code.sql-blue?style=flat" />](Code.sql) [<img src="https://img.shields.io/badge/🔹_SQL_Kood_2.0-Code2.0.sql-blue?style=flat" />](Code2.0.sql) [<img src="https://img.shields.io/badge/🔸_Juhend-CREATE_INSERT-orange?style=flat" />](CREATE_IMSERT.md) [<img src="https://img.shields.io/badge/🟩_Kasutajad-Kasutaja.md-green?style=flat" />](Kasutaja.md) [<img src="https://img.shields.io/badge/🟪_Müük-sales.md-teal?style=flat" />](sales.md) [<img src="https://img.shields.io/badge/🟥_Päästikud_(MariaDB)-Triger.md-red?style=flat" />](Triger.md) [<img src="https://img.shields.io/badge/🟥_Päästikud_(XAMPP)-TrigerXAMPP.md-red?style=flat" />](TrigerXAMPP.md) [<img src="https://img.shields.io/badge/🟪_Protseduurid-Protseduurid.md-purple?style=flat" />](Protseduurid.md) [<img src="https://img.shields.io/badge/⬛_Salvestatud-Stored.md-black?style=flat" />](Stored.md)
 ---
 
 ## Põhimõisted
