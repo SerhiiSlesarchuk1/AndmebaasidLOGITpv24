@@ -2,14 +2,53 @@
 admebaaside haldusega seotud sql kood ja konspektid
 
 ## 📂 Projekti sisujuht
+<div class="projekti-navigatsioon">
+  <a href="Code.sql" class="nav-nupp sql-nupp">SQL Kood</a>
+  <a href="Code2.0.sql" class="nav-nupp sql-nupp">SQL Kood 2.0</a>
+  <a href="CREATE_IMSERT.md" class="nav-nupp doc-nupp">CREATE INSERT Juhend</a>
+  <a href="Kasutaja.md" class="nav-nupp user-nupp">Kasutajad</a>
+  <a href="Protseduurid.md" class="nav-nupp proc-nupp">Protseduurid</a>
+  <a href="sales.md" class="nav-nupp sales-nupp">Müügihaldus</a>
+  <a href="Triger.md" class="nav-nupp triger-nupp">Päästikud (MariaDB)</a>
+  <a href="TrigerXAMPP.md" class="nav-nupp triger-nupp">Päästikud (XAMPP)</a>
+  <a href="Stored.md" class="nav-nupp doc-nupp">Salvestatud</a>
+</div>
 
-| 🔨 Baas-SQL ja Tabelid | 🔐 Kasutajad ja Õigused | ⚙️ Päästikud ja Protseduurid |
-| :--- | :--- | :--- |
-| 📄 [Code.sql](Code.sql) <br> *(Põhiline skript)* | 📄 [Kasutaja.md](Kasutaja.md) <br> *(Õiguste seadistamine)* | 📄 [Triger.md](Triger.md) <br> *(Logimine MariaDB-s)* |
-| 📄 [Code2.0.sql](Code2.0.sql) <br> *(Uuendatud SQL kood)* | 📄 [sales.md](sales.md) <br> *(Müügihaldus)* | 📄 [TrigerXAMPP.md](TrigerXAMPP.md) <br> *(Päästikud XAMPP-is)* |
-| 📄 [CREATE_IMSERT.md](CREATE_IMSERT.md) <br> *(Andmete lisamise juhend)* | | 📄 [Protseduurid.md](Protseduurid.md) <br> *(Salvestatud protseduurid)* |
-| | | 📄 [Stored.md](Stored.md) <br> *(Täiendavad protseduurid)* |
+<style>
+  .projekti-navigatsioon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
 
+  .nav-nupp {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-nupp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    opacity: 0.9;
+  }
+
+  /* Цвета кнопок по категориям */
+  .sql-nupp { background-color: #007bff; }    /* Синий */
+  .doc-nupp { background-color: #fd7e14; }    /* Оранжевый */
+  .user-nupp { background-color: #28a745; }   /* Зеленый */
+  .proc-nupp { background-color: #6f42c1; }   /* Фиолетовый */
+  .sales-nupp { background-color: #e83e8c; }  /* Розовый */
+  .triger-nupp { background-color: #dc3545; } /* Красный */
+</style>
 ---
 
 ## Põhimõisted
