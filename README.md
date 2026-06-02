@@ -1,6 +1,17 @@
 ## AndmebaasidLOGITpv24
 admebaaside haldusega seotud sql kood ja konspektid
 
+## 📂 Projekti sisujuht
+
+| 🔨 Baas-SQL ja Tabelid | 🔐 Kasutajad ja Õigused | ⚙️ Päästikud ja Protseduurid |
+| :--- | :--- | :--- |
+| 📄 [Code.sql](Code.sql) <br> *(Põhiline skript)* | 📄 [Kasutaja.md](Kasutaja.md) <br> *(Õiguste seadistamine)* | 📄 [Triger.md](Triger.md) <br> *(Logimine MariaDB-s)* |
+| 📄 [Code2.0.sql](Code2.0.sql) <br> *(Uuendatud SQL kood)* | 📄 [sales.md](sales.md) <br> *(Müügihaldus)* | 📄 [TrigerXAMPP.md](TrigerXAMPP.md) <br> *(Päästikud XAMPP-is)* |
+| 📄 [CREATE_IMSERT.md](CREATE_IMSERT.md) <br> *(Andmete lisamise juhend)* | | 📄 [Protseduurid.md](Protseduurid.md) <br> *(Salvestatud protseduurid)* |
+| | | 📄 [Stored.md](Stored.md) <br> *(Täiendavad protseduurid)* |
+
+---
+
 ## Põhimõisted
 - Andmebaasi haldussüsteemid - tarkvara, millega abil saab luua andmebaas (mariaDB - XAMPP, SQL Server - SQL Server Management Studio)
 - Andmebaas - struktureeritud andmete kogum
