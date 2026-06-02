@@ -61,7 +61,7 @@ ALTER TABLE tootaja ALTER COLUMN testVeerg varchar(5);
 sp_help tootaja; 
 ```
 
-```
+```sql
 -- 1. ja 2. Tabelite loomine koos piirangutega
 CREATE TABLE Category(
 idCategory int PRIMARY KEY identity(1,1),
