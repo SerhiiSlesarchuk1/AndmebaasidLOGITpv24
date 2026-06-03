@@ -47,23 +47,7 @@ SELECT * FROM logi;
 ```
 
 ```sql
---2. DELETE triger - jälgib kustutamine tabelis linnad
---ja teeb vastava kirje logi tabelisse
-CREATE TRIGGER linnaKustutamine
-ON linnad -- tabel, mida triger jälgib
-FOR DELETE
-AS
-INSERT INTO logi(kasutaja, aeg, andmed)
-SELECT
-SYSTEM_USER, --siselogitud user
-GETDATE(),
-CONCAT('kustutatud: ',deleted.linnanimi,', ',
-deleted.maakond,', ',deleted.rahvaarv)
-FROM deleted;
-```
-
-```sql
---DELETE triger - jälgib kustutamine tabelis linnad 
+--2. DELETE triger - jälgib kustutamine tabelis linnad 
 --ja teeb vastava kirje logi tabelisse
 CREATE TRIGGER linnaKustutamine
 ON linnad -- tabel, mida triger jälgib
@@ -79,7 +63,7 @@ FROM deleted;
 ```
 
 ```sql
---Update triger
+--3. Update triger
 CREATE TRIGGER linnaUuendamine
 ON linnad --tabelinimi, mis on vaja jälgida
 FOR UPDATE
