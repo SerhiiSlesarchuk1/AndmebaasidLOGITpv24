@@ -21,6 +21,7 @@ id int primary key identity(1,1),
 kasutaja varchar(50),
 aeg DATETIME,
 andmed TEXT);
+```
 
 ```sql
 --1. Triger lisatud andmete jälgimeseks tabelis linnad.
