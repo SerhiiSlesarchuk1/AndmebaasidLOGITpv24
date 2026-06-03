@@ -22,6 +22,7 @@ kasutaja varchar(50),
 aeg DATETIME,
 andmed TEXT);
 
+```sql
 --1. Triger lisatud andmete jälgimeseks tabelis linnad.
 --jälgib linna sisestamine tabelisse ja teeb vastava kirje logi-tabelis
 CREATE TRIGGER linnaLisamine
@@ -42,7 +43,9 @@ VALUES ('Viljandi', 'Viljandimaa', 50000);
 
 SELECT * FROM linnad;
 SELECT * FROM logi;
+```
 
+```sql
 --2. DELETE triger - jälgib kustutamine tabelis linnad
 --ja teeb vastava kirje logi tabelisse
 CREATE TRIGGER linnaKustutamine
@@ -56,7 +59,42 @@ GETDATE(),
 CONCAT('kustutatud: ',deleted.linnanimi,', ',
 deleted.maakond,', ',deleted.rahvaarv)
 FROM deleted;
+```
 
+```sql
+--DELETE triger - jälgib kustutamine tabelis linnad 
+--ja teeb vastava kirje logi tabelisse
+CREATE TRIGGER linnaKustutamine
+ON linnad -- tabel, mida triger jälgib
+FOR DELETE
+AS
+INSERT INTO logi(kasutaja, aeg, andmed)
+SELECT 
+SYSTEM_USER, --siselogitud user
+GETDATE(), 
+CONCAT('kustutatud: ',deleted.linnanimi,', ',
+deleted.maakond,', ',deleted.rahvaarv)
+FROM deleted;
+```
+
+```sql
+--Update triger
+CREATE TRIGGER linnaUuendamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR UPDATE
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SUSER_NAME(),
+GETDATE(), 
+'on tehtud UPDATE käsk', 
+CONCAT('vanad andmed -linn: ', deleted.linnanimi,', elanike arv: ', deleted.rahvaarv,'uued andmed -linn: ', inserted.linnanimi,', elanike arv: ', inserted.rahvaarv) 
+FROM deleted
+INNER JOIN inserted
+ON deleted.linnID=inserted.linnID;
+```
+
+```sql
 --DISABLE TRIGGER ....
 DISABLE TRIGGER linnakustutamine ON linnad;
 ENABLE TRIGGER linnaKustutamine ON linnad;
@@ -65,6 +103,4 @@ ENABLE TRIGGER linnaKustutamine ON linnad;
 DELETE FROM linnad WHERE linnId=2;
 select * from linnad
 select * from logi;
-
-CREATE TRIGGER LinnaLisaKustumine
 ```
